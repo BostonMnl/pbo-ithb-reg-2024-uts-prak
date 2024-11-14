@@ -9,6 +9,8 @@ import Kereta.model.Ticket;
 import Kereta.model.TicketStatus;
 import Kereta.model.Train;
 import Kereta.model.TrainType;
+import Kereta.view.menu;
+
 import java.sql.Date;
 import java.util.ArrayList;
 
@@ -31,15 +33,18 @@ public class Main {
         OnlinePayment onlinePay2 = new OnlinePayment("Tr002", "Xendit");
         OnlinePayment onlinePay3 = new OnlinePayment("Tr003", "DOKU");
 
-        Ticket ticket1 = new Ticket("T001", "LB01", ClassType.BUSINESS_CLASS, TicketStatus.PAID, train1, passenger1, reservation2, 250000, onlinePay3);
-        Ticket ticket2 = new Ticket("T002", "LE01", ClassType.ECONOMY_CLASS, TicketStatus.AWITING_PAYMENT, train1, passenger2, groupReserve, 875000, onlinePay1);
-        Ticket ticket3 = new Ticket("T003", "LE01", ClassType.FIRST_CLASS, TicketStatus.PAID, train3, passenger3, reservation1, 600000, onlinePay2);
+        Ticket ticket1 = new Ticket("T001", "LB01", ClassType.BUSINESS_CLASS, TicketStatus.PAID, train1, passenger1,
+                reservation2, 250000, onlinePay3);
+        Ticket ticket2 = new Ticket("T002", "LE01", ClassType.ECONOMY_CLASS, TicketStatus.AWITING_PAYMENT, train1,
+                passenger2, groupReserve, 875000, onlinePay1);
+        Ticket ticket3 = new Ticket("T003", "LE01", ClassType.FIRST_CLASS, TicketStatus.PAID, train3, passenger3,
+                reservation1, 600000, onlinePay2);
 
         ArrayList<Ticket> tiket = new ArrayList<>();
         tiket.add(ticket1);
         tiket.add(ticket2);
         tiket.add(ticket3);
 
-        
+        Menu.menu(tiket);
     }
 }
