@@ -9,7 +9,7 @@ import Kereta.model.Ticket;
 import Kereta.model.TicketStatus;
 import Kereta.model.Train;
 import Kereta.model.TrainType;
-import Kereta.view.menu;
+import Kereta.view.Menu;
 
 import java.sql.Date;
 import java.util.ArrayList;
