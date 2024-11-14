@@ -17,7 +17,7 @@ public class Menu {
 
         switch (option) {
             case 1:
-
+                printALL.printTicket(tiket);
                 break;
             case 2:
                 controller.countTotalRevenue(tiket, "2024-10-1");
